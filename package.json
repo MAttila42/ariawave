@@ -1,0 +1,14 @@
+{
+  "name": "ariawave",
+  "module": "/package/index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "nanostores": "^0.10.3"
+  }
+}
