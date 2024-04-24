@@ -2,6 +2,10 @@
   "name": "ariawave",
   "module": "/package/index.ts",
   "type": "module",
+  "workspaces": [
+    "apps/*",
+    "package"
+  ],
   "devDependencies": {
     "@antfu/eslint-config": "^2.15.0",
     "@types/bun": "latest",

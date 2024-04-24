@@ -12,7 +12,8 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@tauri-apps/api": "1.5.1"
+    "@tauri-apps/api": "1.5.1",
+    "ariawave": "workspace:*"
   },
   "devDependencies": {
     "@antfu/eslint-config": "2.6.1",
