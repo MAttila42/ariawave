@@ -1,7 +1,9 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 import { defineNuxtConfig } from 'nuxt/config'
 
 export default defineNuxtConfig({
+  alias: {
+    "@ariawave": "../../package/main.ts"
+  },
   devtools: {
     enabled: true,
   },
@@ -11,6 +13,9 @@ export default defineNuxtConfig({
     clearScreen: false,
     server: {
       strictPort: true,
+      fs: {
+        cachedChecks: false
+      }
     },
   },
 })

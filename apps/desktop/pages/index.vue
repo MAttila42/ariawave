@@ -1,3 +1,10 @@
+<script setup lang="ts">
+import { todo } from '@ariawave'
+</script>
+
 <template>
-  <NuxtWelcome />
+  <div>
+    <h1>TODO</h1>
+    <p>{{ todo() }}</p>
+  </div>
 </template>

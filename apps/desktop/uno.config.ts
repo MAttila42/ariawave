@@ -3,18 +3,24 @@ import {
   presetAttributify,
   presetIcons,
   presetUno,
-  presetWebFonts
+  presetWebFonts,
+  transformerDirectives,
+  transformerVariantGroup,
 } from 'unocss'
 
 export default defineConfig({
   presets: [
-    presetUno(),
     presetAttributify(),
     presetIcons(),
+    presetUno(),
     presetWebFonts({
       fonts: {
         sans: 'Ubuntu',
       },
     }),
+  ],
+  transformers: [
+    transformerDirectives(),
+    transformerVariantGroup(),
   ],
 })
