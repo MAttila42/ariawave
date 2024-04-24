@@ -1,0 +1,35 @@
+{
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "eslint.experimental.useFlatConfig": true,
+  "prettier.enable": false,
+  "editor.formatOnSave": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "never"
+  },
+  "eslint.rules.customizations": [
+    { "rule": "style/*", "severity": "warn" },
+    { "rule": "format/*", "severity": "warn" },
+    { "rule": "*-indent", "severity": "warn" },
+    { "rule": "*-spacing", "severity": "warn" },
+    { "rule": "*-spaces", "severity": "warn" },
+    { "rule": "*-order", "severity": "warn" },
+    { "rule": "*-dangle", "severity": "warn" },
+    { "rule": "*-newline", "severity": "warn" },
+    { "rule": "*quotes", "severity": "warn" },
+    { "rule": "*semi", "severity": "warn" }
+  ],
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "html",
+    "markdown",
+    "json",
+    "jsonc",
+    "yaml",
+    "toml"
+  ]
+}
